@@ -13,3 +13,5 @@ class NewsletterLatest extends Component {
         )
     }
 }
+
+export default NewsletterLatest;

@@ -8,7 +8,7 @@ import SigninForm from './signinForm';
 class Signin extends Component {
 
     onSubmit = (fields) => {
-        this.props.Signin(fields, () => {
+        this.props.signIn(fields, () => {
             this.props.history.push('/dashboard');
         })
     }
