@@ -21,7 +21,8 @@
     }
 }
 
-.form-input {
+.form-input,
+.form-textarea {
     &__title {
         color: $color-red-BA;
         font-size: 1.8rem;
@@ -40,6 +41,17 @@
     }
 }
 
+.form-textarea {
+    &__title {
+        align-self: start;
+    }
+    &__input {
+        resize: none;
+        height: 35.5rem;
+        padding-top: 1rem;
+    }
+}
+
 //BUTTON
 
 .form-button {
@@ -54,5 +66,23 @@
         font-weight: 500;
         line-height: 2.8rem;
         text-align: center;
+    }
+}
+
+.form-button-small {
+    &__button {
+        width: 13rem;
+        border-radius: 1.6rem;
+        border: 1px solid $color-gray-4D;
+        width: 7.4rem;
+        height: 2.4rem;
+    
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        text-align: center;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
