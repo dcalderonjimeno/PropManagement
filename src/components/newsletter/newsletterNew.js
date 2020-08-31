@@ -9,11 +9,11 @@ class NewNewsletter extends Component {
         //     // save new newsletter on the backend.
         // }
 
-        // this.props.history.push('/dashboard');
+        this.props.history.push('/dashboard');
     }
 
     onCancel = () => {
-        // this.props.history.push('/dashboard');
+        this.props.history.push('/dashboard');
     }
 
     render() {
