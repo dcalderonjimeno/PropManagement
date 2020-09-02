@@ -34,4 +34,4 @@ function mapStateToProps(state) {
 
 }
 
-export default connect(mapStateToProps, actions)(NewsletterLatest);
+export default connect(mapStateToProps)(NewsletterLatest);
