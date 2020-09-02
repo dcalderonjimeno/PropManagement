@@ -31,4 +31,4 @@ class NewsletterGrid extends Component {
     }
 }
 
-export default conntect(null, actions)(NewsletterGrid);
+export default connect(null, actions)(NewsletterGrid);
