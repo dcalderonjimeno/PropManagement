@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 
-class RequestsItem extends Component {
+import Icon from '../icon';
 
-    handleAddRequest = () => {
-        this.props.history.push('./request/new');
-    }
+class RequestsItem extends Component {
     
     render() {
         return (
             <div className='requests-item'>
-                
+                <div>
+                    <Icon icon='fas fa-exclamation-triangle'/>
+                </div>
             </div>
         )
     }
