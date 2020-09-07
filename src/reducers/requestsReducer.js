@@ -9,11 +9,10 @@ const INITIAL_STATE = {
 export default function(state = INITIAL_STATE, action) {
     switch (action.type) {
         case CHANGE_SELECTED_REQUEST_TYPE:
-            const { user } = action.payload;
+            const boxType = action.payload
             return {
                 ...state,
-                authenticated: true,
-                user
+                selectedRequestsType: boxType
             }
         default: return state;
     }
