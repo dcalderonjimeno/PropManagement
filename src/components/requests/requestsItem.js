@@ -45,12 +45,12 @@ class RequestsItem extends Component {
                         duration={300}
                         height={this.state.height}
                     >
-                        <div className='requests-item__description'>
+                        <div className='item-description'>
                             <img 
-                                className='requests-item__decription-img'
+                                className='item-description__img'
                                 src='http://via.placeholder.com/160x94'
                             />
-                            <p className='requests-item__decription-text'>
+                            <p className='item-description__text'>
                                 lorem IpsumIpsum lorem IpsumIpsum lorem IpsumIpsum 
                             </p>
                         </div>
