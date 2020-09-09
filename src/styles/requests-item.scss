@@ -12,16 +12,18 @@
         justify-self: center;
     }
     &__title {
+        align-self: end;
         grid-column: title-s/title-e;
         grid-row: title-s/title-e;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
     }
     &__tenant-unit {
+        align-self: start;
         grid-column: title-s/title-e;
         grid-row: tenants-s/tenant-e;
-    }
-    &__arrow {
-        grid-column: arrow-s/arrow-e;
-        grid-row: title-s/title-e;
     }
     &__date {
         grid-column: date-s/date-e;
@@ -55,9 +57,16 @@
     }
 
     &__title {
-        font-size: 1.8rem;
-        font-weight: 500;
-        line-height: 2.3rem;
+        &__text {
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 2.3rem;
+            margin-right: 2.5rem;
+        }
+        &__arrow {
+            color: $color-gray-4D;
+            font-size: 3rem;
+        }
     }
 
     &__tenant-unit {
@@ -65,11 +74,6 @@
         font-family: $font-encode-cond;
         font-size: 1.3rem;
         line-height: 1.6rem;
-    }
-    
-    &__arrow {
-        color: $color-gray-4D;
-        font-size: 3rem;
     }
     
     &__date {
@@ -82,7 +86,7 @@
     }
     
     &__description {
-
+        
     }
     
     &__description-img {
