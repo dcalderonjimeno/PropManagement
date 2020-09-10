@@ -23,6 +23,10 @@ class NewNewsletter extends Component {
                     onCancel={() => this.props.onCancel()} 
                     onSubmit={(event) => this.onSubmit(event)}
                     formTitle= 'New Newsletter'
+                    fieldOnePlaceholder='Service Newsletter Title (Here)'
+                    fieldOneTitle='Newsletter Title'
+                    fieldTwoPlaceholder='Text Body (Here)'
+                    fieldTwoTitle='Body'
                 />
             </div>
         )
