@@ -31,6 +31,8 @@ class EditNewsletter extends Component {
                     onCancel={() => this.props.onCancel()} 
                     onSubmit={(event) => this.onSubmit(event)}
                     formTitle= 'Edit Newsletter'
+                    fieldOneTitle='Newsletter Title'
+                    fieldTwoTitle='Newsletter Body'
                 />
             </div>
         )
