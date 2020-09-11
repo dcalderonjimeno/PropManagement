@@ -11,7 +11,7 @@ class NewRequest extends Component {
         // if(button == 'submit') {
         //     // save new newsletter on the backend.
         // }
-        this.props.createNewRequest(this.props._id, {}, () => {
+        this.props.createNewRequest(this.props._id, fields, {}, () => {
             this.props.history.push('/dashboard');
         })
     }

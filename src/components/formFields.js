@@ -29,7 +29,7 @@ export class FormTextArea extends Component {
                     type={type}
                     {...input}
                     placeholder={placeholder}
-                    value={editValue ? editValue : ''}
+                    value={editValue ? editValue : input.value}
                 >
                    
                 </textarea>
