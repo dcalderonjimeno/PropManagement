@@ -10,7 +10,7 @@ class Requests extends Component {
             <div className='requests'>
                 {
                     this.props.requests.map(requestItem => {
-                        <RequestsItem {...requestItem} key={requestItem._id}/>
+                        return <RequestsItem {...requestItem} key={requestItem._id}/>
                     })
                 }
             </div>
