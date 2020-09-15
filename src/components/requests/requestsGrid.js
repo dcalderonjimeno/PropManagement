@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
-import * as action from '../../actions';
+import * as actions from '../../actions';
 
 import Button from '../button';
 import RequestsBoxes from './requestsBoxes';
@@ -27,6 +27,7 @@ class RequestsGrid extends Component {
         )
     }
 }
+
 RequestsGrid = connect(null, actions)(RequestsGrid)
 
 export default RequestsGrid
