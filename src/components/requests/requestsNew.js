@@ -19,7 +19,7 @@ class NewRequest extends Component {
         this.props.createNewRequest(this.props._id, formData, () => {
             this.props.history.push('/dashboard');
         })
-    }
+    };
 
     onCancel = () => {
         this.props.history.push('/dashboard');
