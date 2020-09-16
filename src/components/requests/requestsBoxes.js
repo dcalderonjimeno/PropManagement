@@ -1,4 +1,3 @@
-import { request } from 'express';
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
@@ -9,9 +8,9 @@ class RequestsBoxes extends Component {
     render() {
         return (
             <div className='requests-boxes'>
-                <RequestsBox title={'pending'} count ={this.props.pendingCount}/>
-                <RequestsBox title={'in-progress'} count ={this.props.progressCount}/>
-                <RequestsBox title={'complete'} count ={this.props.completeCount}/>
+                <RequestsBox icon='fas fa-exclamation-triangle' title={'pending'} count ={this.props.pendingCount}/>
+                <RequestsBox icon='fas fa-wrench' title={'in-progress'} count ={this.props.progressCount}/>
+                <RequestsBox icon='fas fa-check-square' title={'complete'} count ={this.props.completeCount}/>
             </div>
         )
     }
