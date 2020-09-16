@@ -21,11 +21,6 @@ export function fetchNewsletters() {
                 console.log(err);
             })
     }
-
-    dispatch ({
-        type: SET_NEWSLETTERS,
-        payload: response.data
-    })
 }
 
 export function fetchNewsletterWithId(id) {
