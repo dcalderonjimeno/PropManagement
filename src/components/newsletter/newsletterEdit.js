@@ -12,11 +12,9 @@ class EditNewsletter extends Component {
         var fromData = new FormData();
         fromData.append('title', title);
         formData.append('body', body);
-        if(image != undefined) {
-            formData.append('image', image);
-        }
+        formData.append('image', image);
 
-        this.props.EditNewsletter(formData, () => {
+        this.props.editNewsletter(this.props.match.params.id, formData, () => {
             this.props.history.push('/dashboard');
         })
     }
