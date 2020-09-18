@@ -6,6 +6,7 @@ import {
 const INITIAL_STATE = {
     requests: [],
     selectedRequests: 'pending',
+}
 
 export default function(state = INITIAL_STATE, action) {
     switch (action.type) {
