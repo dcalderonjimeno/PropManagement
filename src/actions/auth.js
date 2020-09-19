@@ -7,8 +7,19 @@ import {
 } from './types';
 
 export function signUp(fields, success) {
+    
+    // THIS IS THE ADMIN CODE FOR CREATING ADMIN ACOUNTS 
+    // var newFields = {
+    //     admin: true
+    // } 
+
+    // newFields = {
+    //     ...fields,
+    //     newFields
+    // }
+    
     return function(dispatch) {
-        axios.post(`${ROOT_URL}/signUp`, fields)
+        axios.post(`${ROOT_URL}/signUp`, fields) // CHANGE fields to newFields TO CREATE AN ADMIN ACCOUNT 
             .then(response => {
                 const { token } = response.data;
                 localStorage.setItem('token', token);
